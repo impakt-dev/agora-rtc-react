@@ -17,6 +17,7 @@ function _objectWithoutPropertiesLoose(source, excluded) {
   return target;
 }
 
+var _excluded = ["videoTrack"];
 var createClient = function createClient(config) {
   var client;
 
@@ -305,7 +306,7 @@ var AgoraVideoPlayer = function AgoraVideoPlayer(props) {
   var vidDiv = useRef(null);
 
   var videoTrack = props.videoTrack,
-      other = _objectWithoutPropertiesLoose(props, ["videoTrack"]);
+      other = _objectWithoutPropertiesLoose(props, _excluded);
 
   useEffect(function () {
     if (vidDiv.current !== null) videoTrack.play(vidDiv.current);
