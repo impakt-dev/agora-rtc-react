@@ -6,7 +6,7 @@ This wrapper supports **React >= v16.8**
 
 ## Install
 ```bash
-npm install git://github.com/AgoraIO-Community/agora-rtc-react#v1.0.1
+yarn add custom-agora-rtc-react
 ```
 
 ## Usage
